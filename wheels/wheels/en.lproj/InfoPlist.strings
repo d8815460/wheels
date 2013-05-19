@@ -1,2 +1,120 @@
 /* Localized versions of Info.plist keys */
 
+/* 登入畫面 */
+"msgWelcome" = "What Goes Around, Comes Around.";
+"StartBtn" = "    Get Started";
+
+/* 登入流程1 */
+"buttonEdit" = "Edit";
+"labelEmail" = "Email";
+"labelBirthday" = "Birthday";
+"labelInfoConfirm" = "Let's confirm your info.";
+"msgChangeInfo" = "You can change your displayed name and profile photo by clicking on Edit.";
+"We'll get you started in a fly." = "We'll get you started in a fly.";
+
+/* 登入流程2 位置通知服務 */
+"ForwardViewControllerCells" = "ForwardViewControllerCells";
+"msgNotificationDistance" = "Slide the bar to decide the range you want to receive notifications";
+"msgLocDetectionDetail" = "";
+"titleLocationService" = "Location Service";
+"titleLocationMe" = "Current Location";
+"locationStates" = "Location Service Close";
+"locationNone" = "<unknown>";
+
+/* 編輯名稱照片 */
+"buttonPhotoEdit" = "Done";
+"msgAvatarUpload" = "Click one to change your avatar";
+"msgChangeName" = "Enter a name you want to display";
+
+/* 登入流程2 位置通知服務 */
+"buttonLocDetection" = "Next";
+"labelNav" = "Location Service";
+
+/* Happing首頁 */
+"buttonMapMode" = "Show Map";
+"msgHappeningEmptyDataSet" = "There is currently no question nearby.  Be the first one to ask.";
+
+/* 關於我L1 */
+"labelMe" = "Me";
+
+
+/* No comment provided by engineer. */
+"labelFB" = "Facebook";
+"msgGreeting" = "Hello";
+"buttonNext" = "Next";
+"msgLoading" = "Loading...";
+"buttonDone" = "done";
+
+/* 發問流程1 */
+"msgAskQuotaOut" = "Out of quota!";
+
+/* 發問流程2 */
+"msgInput" = "What's on your mind?";
+"buttonChangeLocation" = "Ask Anywhere";
+"Location" = "Locate Me";
+"camCancel" = "Cancel";
+"camCamera" = "Take a Picture";
+"camAlbum" = "Chose from Album";
+"camDelete" = "Delete";
+"buttonPost" = "Post";
+
+/* 全地圖畫面 */
+"buttonNearby" = "Nearby";
+"Reminder" = "Reminder";
+"msgAskAnywhere" = "Navigate the map and tap on the location to ask people nearby";
+
+
+
+
+/* 關於我L1 */
+"buttonSetting" = "Settings";
+/* 我的問題 */
+"titleMyQ" = "My Question";
+
+/* 我的回答 */
+"titleMyA" = "My Answer";
+
+/* 檢舉提示 */
+"msgConfirmSpam" = "Are you sure you want to make %@ as spam？";
+"buttonReportSpam" = "Report Spam";
+"buttonOK" = "Report";
+"buttonCancel" = "Cancel";
+
+/* 刪除提示 */
+"msgConfirmDelete" = "Are you sure you want to delete %@'s answer？";
+"buttonDeleteTitle" = "Delete Answer";
+"buttonDeleteOK" = "Delete";
+"buttonDeleteCancel" = "Cancel";
+
+/* Happening L2 */
+"msgPplNotified" = "%@ notified";
+"msgNoReply" = "No reply yet.";
+"msgPplReplied" = "%i replied";
+
+/* 推播訊息 */
+"notifyLikesAns" = "%@ like your Answer";
+"notifyFriendInstall" = "your friend %@ install Wheels, too.";
+"notifySpanPush" = "You are not allowed to ask more questions today due to spam reports";
+
+/* 選擇Category */
+"CategoryfoodNfunImageKey"      =   "category_foodNfun.png";
+"CategoryroadTrafficImageKey"   =   "category_roadTraffic.png";
+"CategoryTicketInfoImageKey"    =   "category_TicketInfo.png";
+"CategoryshopSellImageKey"      =   "category_shopSell.png";
+"CategoryShowOffImageKey"       =   "category_ShowOff.png";
+"CategoryLostNFoundImageKey"    =   "category_LostNFound.png";
+"CategorySocialImageKey"        =   "category_Social.png";
+"CategoryEmergencyImageKey"     =   "category_Emergency.png";
+"CategorystartAskImageKey"      =   "category_startAsk.png";
+
+"0" = "foodNfun";
+"1" = "roadTraffic";
+"2" = "TicketInfo";
+"3" = "shopSell";
+"4" = "ShowOff";
+"5" = "LostNFound";
+"6" = "Social";
+"7" = "Emergency";
+
+/* 個人心情設定 */
+"RegMsgInput" = "Say Something here about you...";

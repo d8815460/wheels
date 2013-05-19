@@ -13,9 +13,6 @@
 		232F928517486E87007F3470 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 232F928317486E87007F3470 /* InfoPlist.strings */; };
 		232F928717486E87007F3470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F928617486E87007F3470 /* main.m */; };
 		232F928B17486E87007F3470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F928A17486E87007F3470 /* AppDelegate.m */; };
-		232F928D17486E87007F3470 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 232F928C17486E87007F3470 /* Default.png */; };
-		232F928F17486E87007F3470 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 232F928E17486E87007F3470 /* Default@2x.png */; };
-		232F929117486E87007F3470 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 232F929017486E87007F3470 /* Default-568h@2x.png */; };
 		232F929417486E87007F3470 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232F929217486E87007F3470 /* MainStoryboard.storyboard */; };
 		232F929717486E87007F3470 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F929617486E87007F3470 /* ViewController.m */; };
 		232F92AB17488F99007F3470 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F929F17488F99007F3470 /* FacebookSDK.framework */; };
@@ -48,6 +45,10 @@
 		232F92E917489F39007F3470 /* PAPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92E417489F39007F3470 /* PAPCache.m */; };
 		232F92EA17489F39007F3470 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92E617489F39007F3470 /* PAPConstants.m */; };
 		232F92EB17489F39007F3470 /* PAPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92E817489F39007F3470 /* PAPUtility.m */; };
+		232F92F11748A2C5007F3470 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92EE1748A2C5007F3470 /* BaseViewController.m */; };
+		232F92F21748A2C5007F3470 /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92F01748A2C5007F3470 /* CustomTabBarViewController.m */; };
+		232F92F61748A6C1007F3470 /* AYIWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92F51748A6C1007F3470 /* AYIWelcomeViewController.m */; };
+		232F92F91748A6C9007F3470 /* AYILogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92F81748A6C9007F3470 /* AYILogInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,9 +62,6 @@
 		232F928817486E87007F3470 /* wheels-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wheels-Prefix.pch"; sourceTree = "<group>"; };
 		232F928917486E87007F3470 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		232F928A17486E87007F3470 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		232F928C17486E87007F3470 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		232F928E17486E87007F3470 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		232F929017486E87007F3470 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		232F929317486E87007F3470 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		232F929517486E87007F3470 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		232F929617486E87007F3470 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -107,6 +105,14 @@
 		232F92E617489F39007F3470 /* PAPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPConstants.m; sourceTree = "<group>"; };
 		232F92E717489F39007F3470 /* PAPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPUtility.h; sourceTree = "<group>"; };
 		232F92E817489F39007F3470 /* PAPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPUtility.m; sourceTree = "<group>"; };
+		232F92ED1748A2C5007F3470 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		232F92EE1748A2C5007F3470 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		232F92EF1748A2C5007F3470 /* CustomTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
+		232F92F01748A2C5007F3470 /* CustomTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
+		232F92F41748A6C1007F3470 /* AYIWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYIWelcomeViewController.h; sourceTree = "<group>"; };
+		232F92F51748A6C1007F3470 /* AYIWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYIWelcomeViewController.m; sourceTree = "<group>"; };
+		232F92F71748A6C9007F3470 /* AYILogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYILogInViewController.h; sourceTree = "<group>"; };
+		232F92F81748A6C9007F3470 /* AYILogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYILogInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				232F92E217489F26007F3470 /* PAPUnit */,
+				232F92EC1748A2B2007F3470 /* TabBarController */,
+				232F92F31748A69A007F3470 /* 0.登入及註冊畫面 */,
 				232F928917486E87007F3470 /* AppDelegate.h */,
 				232F928A17486E87007F3470 /* AppDelegate.m */,
 				232F929217486E87007F3470 /* MainStoryboard.storyboard */,
@@ -208,9 +216,6 @@
 				232F928317486E87007F3470 /* InfoPlist.strings */,
 				232F928617486E87007F3470 /* main.m */,
 				232F928817486E87007F3470 /* wheels-Prefix.pch */,
-				232F928C17486E87007F3470 /* Default.png */,
-				232F928E17486E87007F3470 /* Default@2x.png */,
-				232F929017486E87007F3470 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,6 +289,28 @@
 			name = PAPUnit;
 			sourceTree = "<group>";
 		};
+		232F92EC1748A2B2007F3470 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				232F92ED1748A2C5007F3470 /* BaseViewController.h */,
+				232F92EE1748A2C5007F3470 /* BaseViewController.m */,
+				232F92EF1748A2C5007F3470 /* CustomTabBarViewController.h */,
+				232F92F01748A2C5007F3470 /* CustomTabBarViewController.m */,
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
+		232F92F31748A69A007F3470 /* 0.登入及註冊畫面 */ = {
+			isa = PBXGroup;
+			children = (
+				232F92F41748A6C1007F3470 /* AYIWelcomeViewController.h */,
+				232F92F51748A6C1007F3470 /* AYIWelcomeViewController.m */,
+				232F92F71748A6C9007F3470 /* AYILogInViewController.h */,
+				232F92F81748A6C9007F3470 /* AYILogInViewController.m */,
+			);
+			name = "0.登入及註冊畫面";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,9 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				232F928517486E87007F3470 /* InfoPlist.strings in Resources */,
-				232F928D17486E87007F3470 /* Default.png in Resources */,
-				232F928F17486E87007F3470 /* Default@2x.png in Resources */,
-				232F929117486E87007F3470 /* Default-568h@2x.png in Resources */,
 				232F929417486E87007F3470 /* MainStoryboard.storyboard in Resources */,
 				232F92AC17488F99007F3470 /* FacebookSDKResources.bundle in Resources */,
 			);
@@ -364,6 +388,10 @@
 				232F92E917489F39007F3470 /* PAPCache.m in Sources */,
 				232F92EA17489F39007F3470 /* PAPConstants.m in Sources */,
 				232F92EB17489F39007F3470 /* PAPUtility.m in Sources */,
+				232F92F11748A2C5007F3470 /* BaseViewController.m in Sources */,
+				232F92F21748A2C5007F3470 /* CustomTabBarViewController.m in Sources */,
+				232F92F61748A6C1007F3470 /* AYIWelcomeViewController.m in Sources */,
+				232F92F91748A6C9007F3470 /* AYILogInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

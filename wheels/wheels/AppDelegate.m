@@ -7,8 +7,55 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"                    //判斷網路是否可用
+#import "MBProgressHUD.h"                   //Alert HUD
+#import "UIImage+ResizeAdditions.h"         //重新定義UIImage大小
+#import "AYIWelcomeViewController.h"        //歡迎畫面
+#import "AYILogInViewController.h"          //登入畫面
+
+@interface AppDelegate(){
+    NSMutableArray *_date;                  //FB之照片資料
+    BOOL firstLaunch;                       //是否第一次啟動
+}
+@property (nonatomic, strong) AYIWelcomeViewController  *welcomViewController;          //歡迎畫面
+@property (nonatomic, strong) AYILogInViewController    *loginViewController;           //登入畫面
+@property (nonatomic, strong) MBProgressHUD *hud;                                       //Alert過程
+@property (nonatomic, strong) NSTimer *autoFollowTimer;                                 //定時器追蹤朋友Follow
+@property (nonatomic, strong) Reachability *hostReach;                                  //判斷網路是否可用
+@property (nonatomic, strong) Reachability *internetReach;                              //判斷網路是否可用
+@property (nonatomic, strong) Reachability *wifiReach;                                  //判斷wifi網路是否可用
+@property (nonatomic, strong) NSDictionary *userLocationInforForSave;                   //儲存經緯資料用
+@property (nonatomic, strong) NSDictionary *userInfoSave;                               //userInfo全域變數
+
+- (void)setupAppearance;                                                                //設定主題界面
+- (BOOL)shouldProceedToMain2Interface:(PFUser *)user;
+- (BOOL)shouldProceedToMainInterface:(PFUser *)user;                                    //如果當前用戶是Facebook用戶，繼續執行主界面，如果不是就不回傳NO。
+- (BOOL)handleActionURL:(NSURL *)url;                                                   //偵測動作URL_照相機跟相簿偵測
+//計時器
+- (void) fireAtimer;
+- (void) gotoHappenL2:(NSTimer *)timer;
+@end
 
 @implementation AppDelegate
+@synthesize window = _window;
+@synthesize viewController = _viewController;
+@synthesize tabBarController;
+@synthesize navController;
+@synthesize networkStatus;
+@synthesize welcomViewController;                   //歡迎畫面
+@synthesize loginViewController;                    //登入畫面
+@synthesize hud;                                    //Alert過程
+@synthesize autoFollowTimer;                        //定時器追蹤朋友Follow
+@synthesize hostReach;                              //判斷網路是否可用
+@synthesize internetReach;                          //判斷網路是否可用
+@synthesize wifiReach;                              //判斷wifi網路是否可用
+@synthesize filterDistance;
+@synthesize currentLocation;
+@synthesize userLocationInforForSave;               //儲存經緯資料用
+@synthesize wheelsUser;                             //要將用戶資料傳到下一個畫面用
+@synthesize userInfoSave;                           //userInfo全域變數
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
