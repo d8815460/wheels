@@ -1,4 +1,5 @@
 // PFObject.h
+// Copyright 2011 Parse, Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import "PFACL.h"
@@ -7,7 +8,8 @@
 @protocol PFSubclassing;
 
 /*!
- A Parse Framework Object that is a local representation of data persisted to the Parse cloud. This is the main class that is used to interact with objects in your app.
+ A Parse Framework Object that is a local representation of data persisted to the Parse cloud.
+ This is the main class that is used to interact with objects in your app.
 */
 @class PFRelation;
 @class PFTask;
@@ -15,18 +17,6 @@
 NS_REQUIRES_PROPERTY_DEFINITIONS
 @interface PFObject : NSObject {
     BOOL dirty;
-    BOOL hasBeenFetched;
-
-    NSString *objectId;
-    NSString *parseClassName;
-
-    NSMutableDictionary *dataAvailability;
-
-    // The data as it was known the last time it was fetched from the server.
-    // If the object has never been fetched, some keys on the server may not
-    // be present in this dictionary, while others may be known because of the
-    // result of a save.
-    NSMutableDictionary *serverData;
 
     // An array of NSDictionary of NSString -> PFFieldOperation.
     // Each dictionary has a subset of the object's keys as keys, and the
@@ -40,12 +30,6 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
     // Our best estimate as to what the current data is, based on
     // the last fetch from the server, and the set of pending operations.
     NSMutableDictionary *estimatedData;
-
-    // A dictionary that maps id (objects) => PFJSONCache 
-    NSMutableDictionary *hashedObjectsCache;
-
-    NSDate *updatedAt;
-    NSDate *createdAt;
 }
 
 #pragma mark Constructors

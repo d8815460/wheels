@@ -13,10 +13,7 @@
  A file of binary data stored on the Parse servers. This can be a image, video, or anything else
  that an application needs to reference in a non-relational way.
  */
-@interface PFFile : NSObject {
-    NSString *name;
-    NSString *url;
-}
+@interface PFFile : NSObject
 
 /** @name Creating a PFFile */
 
@@ -46,12 +43,12 @@
 /*!
 The name of the file.
  */
-@property (readonly) NSString *name;
+@property (assign, readonly) NSString *name;
 
 /*!
  The url of the file.
  */
-@property (readonly) NSString *url;
+@property (assign, readonly) NSString *url;
 
 /** @name Storing Data with Parse */
 
@@ -75,7 +72,6 @@ The name of the file.
 
 /*!
  Saves the file asynchronously.
- @result Returns whether the save succeeded.
  */
 - (void)saveInBackground;
 
@@ -161,7 +157,7 @@ The name of the file.
  Asynchronously gets the data from cache if available or fetches its contents 
  from the Parse servers. Executes the resultBlock upon
  completion or error. Executes the progressBlock periodically with the percent progress. progressBlock will get called with 100 before resultBlock is called.
- @param block The block should have the following argument signature: (NSData *result, NSError *error)
+ @param resultBlock The block should have the following argument signature: (NSData *result, NSError *error)
  @param progressBlock The block should have the following argument signature: (int percentDone)
  */
 - (void)getDataInBackgroundWithBlock:(PFDataResultBlock)resultBlock

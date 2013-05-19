@@ -21,9 +21,9 @@
 		232F92AB17488F99007F3470 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F929F17488F99007F3470 /* FacebookSDK.framework */; };
 		232F92AC17488F99007F3470 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 232F92A017488F99007F3470 /* FacebookSDKResources.bundle */; };
 		232F92AD17488F99007F3470 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92A317488F99007F3470 /* MBProgressHUD.m */; };
-		232F92AE17488F99007F3470 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F92A417488F99007F3470 /* Parse.framework */; };
 		232F92AF17488F99007F3470 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92A717488F99007F3470 /* Reachability.m */; };
 		232F92B017488F99007F3470 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92AA17488F99007F3470 /* TTTTimeIntervalFormatter.m */; };
+		232F92B217488FF4007F3470 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F92B117488FF4007F3470 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +47,11 @@
 		232F92A017488F99007F3470 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		232F92A217488F99007F3470 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		232F92A317488F99007F3470 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		232F92A417488F99007F3470 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		232F92A617488F99007F3470 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		232F92A717488F99007F3470 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		232F92A917488F99007F3470 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
 		232F92AA17488F99007F3470 /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
+		232F92B117488FF4007F3470 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 				232F927D17486E87007F3470 /* Foundation.framework in Frameworks */,
 				232F927F17486E87007F3470 /* CoreGraphics.framework in Frameworks */,
 				232F92AB17488F99007F3470 /* FacebookSDK.framework in Frameworks */,
-				232F92AE17488F99007F3470 /* Parse.framework in Frameworks */,
+				232F92B217488FF4007F3470 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,10 +128,10 @@
 		232F929E17488F99007F3470 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				232F92B117488FF4007F3470 /* Parse.framework */,
 				232F929F17488F99007F3470 /* FacebookSDK.framework */,
 				232F92A017488F99007F3470 /* FacebookSDKResources.bundle */,
 				232F92A117488F99007F3470 /* MBProgressHUD */,
-				232F92A417488F99007F3470 /* Parse.framework */,
 				232F92A517488F99007F3470 /* Reachability */,
 				232F92A817488F99007F3470 /* TTTTimeIntervalFormatter */,
 			);
