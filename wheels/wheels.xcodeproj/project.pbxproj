@@ -45,6 +45,9 @@
 		232F92DD17489207007F3470 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F92DC17489207007F3470 /* libsqlite3.dylib */; };
 		232F92DF1748920E007F3470 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F92DE1748920E007F3470 /* Social.framework */; };
 		232F92E117489217007F3470 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232F92E017489217007F3470 /* AdSupport.framework */; };
+		232F92E917489F39007F3470 /* PAPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92E417489F39007F3470 /* PAPCache.m */; };
+		232F92EA17489F39007F3470 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92E617489F39007F3470 /* PAPConstants.m */; };
+		232F92EB17489F39007F3470 /* PAPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 232F92E817489F39007F3470 /* PAPUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +101,12 @@
 		232F92DC17489207007F3470 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		232F92DE1748920E007F3470 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		232F92E017489217007F3470 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		232F92E317489F39007F3470 /* PAPCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPCache.h; sourceTree = "<group>"; };
+		232F92E417489F39007F3470 /* PAPCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPCache.m; sourceTree = "<group>"; };
+		232F92E517489F39007F3470 /* PAPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPConstants.h; sourceTree = "<group>"; };
+		232F92E617489F39007F3470 /* PAPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPConstants.m; sourceTree = "<group>"; };
+		232F92E717489F39007F3470 /* PAPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPUtility.h; sourceTree = "<group>"; };
+		232F92E817489F39007F3470 /* PAPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +190,7 @@
 		232F928017486E87007F3470 /* wheels */ = {
 			isa = PBXGroup;
 			children = (
+				232F92E217489F26007F3470 /* PAPUnit */,
 				232F928917486E87007F3470 /* AppDelegate.h */,
 				232F928A17486E87007F3470 /* AppDelegate.m */,
 				232F929217486E87007F3470 /* MainStoryboard.storyboard */,
@@ -261,6 +271,19 @@
 			path = "UIImage Categories";
 			sourceTree = "<group>";
 		};
+		232F92E217489F26007F3470 /* PAPUnit */ = {
+			isa = PBXGroup;
+			children = (
+				232F92E317489F39007F3470 /* PAPCache.h */,
+				232F92E417489F39007F3470 /* PAPCache.m */,
+				232F92E517489F39007F3470 /* PAPConstants.h */,
+				232F92E617489F39007F3470 /* PAPConstants.m */,
+				232F92E717489F39007F3470 /* PAPUtility.h */,
+				232F92E817489F39007F3470 /* PAPUtility.m */,
+			);
+			name = PAPUnit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +361,9 @@
 				232F92BD174890F9007F3470 /* UIImage+AlphaAdditions.m in Sources */,
 				232F92BE174890F9007F3470 /* UIImage+ResizeAdditions.m in Sources */,
 				232F92BF174890F9007F3470 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				232F92E917489F39007F3470 /* PAPCache.m in Sources */,
+				232F92EA17489F39007F3470 /* PAPConstants.m in Sources */,
+				232F92EB17489F39007F3470 /* PAPUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +455,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wheels/wheels-Prefix.pch";
 				INFOPLIST_FILE = "wheels/wheels-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -444,6 +471,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wheels/wheels-Prefix.pch";
 				INFOPLIST_FILE = "wheels/wheels-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
